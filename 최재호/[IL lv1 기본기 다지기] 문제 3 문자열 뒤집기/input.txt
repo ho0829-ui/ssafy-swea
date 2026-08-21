@@ -1,4 +1,0 @@
-3
-hello
-python
-algorithm
