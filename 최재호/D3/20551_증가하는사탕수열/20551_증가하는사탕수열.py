@@ -5,7 +5,10 @@ T = int(input())
 for tc in range(1, T+1):
     A, B, C = map(int, input().split())
 
-    # candy[2]가 3미만이면 아무리 먹어도 만족시킬 수 없다.
+    # 그리디 알고리즘 사용
+    # 그리디 알고리즘 : 매 순간 지금에서 가장 좋아 보이는 방식을 선택
+    # 한번 선택하고 뒤로 돌아가지 않음
+    # 지금 당장 할 수 있는 최선을 선택함
     if A < 1 or B < 2 or C < 3:
         print(f'#{tc} -1')
         continue
